@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+           text-align: center;
+           background-color:cornflowerblue;
+           margin: 0;
+           padding: 0;
+       }
+       .titulo{
+           font-size: 150%;
+       }
+       .tabla{
+           text-align: center;
+           width: 80%;
+           margin: 30px auto;
+       }
+       table{
+           width: 100%;
+           border-collapse: collapse;
+       }
+       th, td{
+           padding: 10px;
+           border: 1px solid #ddd;
+           text-align: center;
+       }
+       th:hover{
+           background-color: lightblue;
+           transition: background-color 0.5s ease;
+       }
+       @media screen and (max-width: 678px){
+           table{
+               width: 100%;
+           }
+           thead{
+               display: none;
+           }
+           tr td{
+               display: block;
+               text-align: center;
+               padding: 10px;
+               border-bottom: 1px solid #eee;
+               position: relative;
+           }
+           td{
+               border: none;
+               border-bottom: 1px solid #eee;
+               position: relative;
+               padding-left: 50%;
+           }
+           td:before{
+               display: inline-block;
+               position: absolute;
+               left: 10px;
+               font-weight: bold;
+           }
+           td:nth-of-type(1):before { content: "SALA: "; }
+           td:nth-of-type(2):before { content: "HORA: "; }
+           td:nth-of-type(3):before { content: "MODALIDAD: "; }
+           td:nth-of-type(4):before { content: "CONTENIDO: "; }
+       }
+
+    </style>
+</head>
+<body>
+
+<div class="titulo">
+    <div class="titFoto">
+        <img width="100" src="\.idea\logoUtad.png" alt="Seat Ateca">
+    </div>
+    <div class="titInfo">
+        <h1>Evento de Programación U-tad</h1>
+        <h2>Centro Universitario Utad---18/04/2025</h2>
+    </div>
+</div>
+<div class="cuerpo">
+    <br>
+    <p>Hola a todos, os comunicamos que desde la dirección de Utad se ha decidido dar lugar a una iniciativa de entretenimiento
+        unica y exclusivamente para los alumnos de Utad.</p>
+    <p>Se realizarán una serie de charlas y talleres en el edificio Berlín con el fin de haceros socializar un poco, que no servís ni pa jugar a las chapas.</p>
+    <p>En esta tabla se muestran los horarios:</p>
+    <br>
+    <br>
+    <br>
+</div>
+<div class="tabla">
+    <table>
+        <thead>
+        <tr>
+            <th>SALA</th>
+            <th>HORA</th>
+            <th>MODALIDAD</th>
+            <th>CONTENIDO</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>2</td>
+            <td>10:30</td>
+            <td>TALLER</td>
+            <td>pintar animalitos</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>10:30</td>
+            <td>TALLER</td>
+            <td>manualidades con palos</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>10:30</td>
+            <td>TALLER</td>
+            <td>tirar tabique</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>12:00</td>
+            <td>CHARLA</td>
+            <td>componentes pc</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>12:00</td>
+            <td>CHARLA</td>
+            <td>formula 1</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>12:00</td>
+            <td>CHARLA</td>
+            <td>freeStyle</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="form">
+    <br>
+    <br>
+    <br>
+    <p>Completa el formulario aquí:</p>
+    <br>
+    <p>Nombre:</p>
+    <input id="nombre" type="text" placeholder="Nombre..." name="nombre">
+    <p>Correo electrónico:</p>
+    <input id="correo" type="text" placeholder="Correo..." name="correo">
+    <p>Aula y hora:</p>
+    <input type="checkbox" id="clase210" name="clase210" value="clase210">
+    <label for="clase210">aula 2 10:30</label>
+    <br>
+    <input type="checkbox" id="clase310" name="clase310" value="clase310">
+    <label for="clase310">aula 3 10:30</label>
+    <br>
+    <input type="checkbox" id="clase410" name="clase410" value="clase410">
+    <label for="clase410">aula 4 10:30</label>
+    <br>
+    <input type="checkbox" id="clase212" name="clase212" value="clase212">
+    <label for="clase212">aula 2 12:00</label>
+    <br>
+    <input type="checkbox" id="clase312" name="clase312" value="clase312">
+    <label for="clase312">aula 3 12:00</label>
+    <br>
+    <input type="checkbox" id="clase412" name="clase412" value="clase412">
+    <label for="clase412">aula 4 12:00</label>
+    <br>
+    <br>
+    <button type="submit">Enviar</button>
+</div>
+
+<div class="pie">
+    <p>Para más información, contacta con nuestro soporte: <a href="mailto:utadAtencionCliente@u-tad.es">utadAtencionCliente@u-tad.es</a></p>
+    <p>O contáctanos a través de nuestras redes sociales:</p>
+    <a href="https://www.instagram.com/u_tad/?hl=es" target="_blank">Instagram</a>
+    <br>
+    <a href="https://www.facebook.com/utadcentrouniversitario/?locale=en_GB" target="_blank">Facebook</a>
+</div>
+
+</body>
+</html>
